@@ -63,7 +63,7 @@ export default function Home() {
           <h4 className="text-2xl">💪 Power Yoga</h4>
           <p className="text-lg">I really enjoy teaching power classes. Using a faster flow and adding complexity to the postures each round of flow. ✨ High energy and fun!</p>
           <br />
-              <h5 className="text-1xl font-bold">Tuesdays at 6:15pm</h5>
+              <h5 className="text-lg font-bold">Tuesdays at 6:15pm</h5>
               <h6>Crunch Fitness, Fountain City</h6>
               <ul>
             <li>🔥🔥 100 Degrees</li>
@@ -83,7 +83,7 @@ export default function Home() {
           <br />
           <h4 className="text-2xl">🌊 Slow Flow Yoga</h4>
           <p className="text-lg">In slow flow we hold the postures for a longer period of time than power. This gives enough time to deepen each pose. Challenging and strengthening!</p>
-          <h5 className="text-1xl font-bold">Thursdays at 4:00pm</h5>
+          <h5 className="text-lg font-bold">Thursdays at 4:00pm</h5>
           <h6>YogaSix, Bearden</h6>
           <ul>
             <li>🔥 90 Degrees</li>
@@ -101,7 +101,7 @@ export default function Home() {
           <br />
           <hr />
           <br />
-          <h5 className="text-1xl font-bold">Saturdays at 10:30am</h5>
+          <h5 className="text-lg font-bold">Saturdays at 10:30am</h5>
           <h6>YogaSix, Bearden</h6>
           <ul>
             <li>🔥 90 Degrees</li>
