@@ -18,21 +18,24 @@ export default function Home() {
         <section className="justify-items-center text-center">
           <h1 className="text-4xl md:text-6xl lg:txt-8xl space-y-5">Joyoga</h1>
           <h2 className="text-2xl space-y-2 md:text-3xl lg:txt-4xl text-align-center">Yoga is a Moving Meditation</h2>
-          <p className="text-center">Joyanna is a yoga instructor practicing in Knoxville Tennessee</p>
+          <p>
+            <span className="text-lg font-bold">Joyanna</span> is a yoga instructor based in Knoxville, TN. She is passionate about helping others find their own joy through movement and mindfulness.
+          </p>
         </section>
-        <section className="flex gap-4 items-center flex-col sm:flex-row">
+        <section className="flex gap-4 items-start sm:flex-row">
+          {/* <h3 className="text-2xl">Connect with Me</h3> */}
           <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
+            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
             href="https://www.instagram.com/joyogaflow/?igsh=MXVkOXRlMTM4ejY3dQ%3D%3D#" target="_blank"
             rel="noopener noreferrer"
           >
           Instagram</a>
           <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
+            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
             href="https://open.spotify.com/user/31wikm4sn5jyzmi7w74zaf4aara4?si=e29518e8157e41de" target="_blank"
             rel="noopener noreferrer"
           >
-          Spotify Playlists</a>
+          Playlists</a>
           <a
             className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
             href="https://venmo.com/u/Joyogaflow" target="_blank"
@@ -42,8 +45,8 @@ export default function Home() {
           </a>
         </section>
         <section>
-          <h3 className="text-3xl">Classes</h3>
-          <h4 className="text-lg">My classes are designed to be fun and challenging, while also being accessible to all levels of practitioners. I believe that yoga should be a joyful experience, and I strive to create a welcoming and inclusive environment for all students. 👏</h4>
+          <h3 className="text-3xl text-center">Classes & Purpose</h3>
+          <p className="text-lg">My classes are designed to be fun and challenging, while also being accessible to all levels of practitioners. I believe that yoga should be a joyful experience, and I strive to create a welcoming and inclusive environment for all students. 👏</p>
           <p>I teach a variety of classes, including power yoga, slow flow, and restorative yoga. 📍 Currently, you can find me at <a
             className="underline"
             href="https://www.crunch.com/locations/fountain-city" target="_blank"
