@@ -43,14 +43,22 @@ export default function Home() {
         </section>
         <section>
           <h3 className="text-3xl">Classes</h3>
-          <p>I teach a variety of classes, including power yoga, slow flow, and restorative yoga. I also offer private lessons and group classes.</p>
-          <p>Currently, you can find me at Crunch Fitness in Fountain City and Yoga Six in Bearden. Each of these locations offers a unique experience with specific class styles.</p>
-          <p>My classes are designed to be fun and challenging, while also being accessible to all levels of practitioners. I believe that yoga should be a joyful experience, and I strive to create a welcoming and inclusive environment for all students. 👏</p>
+          <h4 className="text-lg">My classes are designed to be fun and challenging, while also being accessible to all levels of practitioners. I believe that yoga should be a joyful experience, and I strive to create a welcoming and inclusive environment for all students. 👏</h4>
+          <p>I teach a variety of classes, including power yoga, slow flow, and restorative yoga. 📍 Currently, you can find me at <a
+            className="underline"
+            href="https://www.crunch.com/locations/fountain-city" target="_blank"
+            rel="noopener noreferrer"
+          >Crunch Fitness in Fountain City</a> and  <a
+          className="underline"
+          href="https://www.yogasix.com/location/bearden" target="_blank"
+          rel="noopener noreferrer"
+        >Yoga Six in Bearden</a>. Each of these locations offers a unique experience with specific class styles.</p>
+        <p>Each location has their own rules for booking, most places have options for drop-in visits or a free trials.</p>
           <br />
           <hr />
           <br />
           <h4 className="text-2xl">💪 Power Yoga</h4>
-          <p>I really enjoy teaching power classes. Using a faster flow and adding complexity to the postures each round of flow. ✨ High energy and fun!</p>
+          <p className="text-lg">I really enjoy teaching power classes. Using a faster flow and adding complexity to the postures each round of flow. ✨ High energy and fun!</p>
           <br />
               <h5 className="text-1xl font-bold">Tuesdays at 6:15pm</h5>
               <h6>Crunch Fitness, Fountain City</h6>
@@ -59,6 +67,7 @@ export default function Home() {
             <li>⏰ 60 Minutes</li>
             <li>🙏 Balancing & Pulsing</li>
           </ul>
+          <br />
              <a
             className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[240px]"
             href="https://www.crunch.com/locations/fountain-city" target="_blank"
@@ -70,8 +79,7 @@ export default function Home() {
           <hr />
           <br />
           <h4 className="text-2xl">🌊 Slow Flow Yoga</h4>
-          <p>Slow flow yoga helps deepen postures by having longer times to hold each one</p>
-    
+          <p className="text-lg">In slow flow we hold the postures for a longer period of time than power. This gives enough time to deepen each pose. Challenging and strengthening!</p>
           <h5 className="text-1xl font-bold">Thursdays at 4:00pm</h5>
           <h6>YogaSix, Bearden</h6>
           <ul>
@@ -79,9 +87,10 @@ export default function Home() {
             <li>⏰ 60 Minutes</li>
             <li>😎 Extra Chill</li>
           </ul>
+          <br />
              <a
             className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[190px]"
-            href="https://www.crunch.com/locations/fountain-city" target="_blank"
+            href="https://www.yogasix.com/location/bearden" target="_blank"
             rel="noopener noreferrer"
           >
             Book at Yoga Six
@@ -96,9 +105,10 @@ export default function Home() {
             <li>⏰ 60 Minutes</li>
             <li>🎶 Extra Vibes</li>
           </ul>
+          <br />
              <a
             className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[190px]"
-            href="https://www.crunch.com/locations/fountain-city" target="_blank"
+            href="https://www.yogasix.com/location/bearden" target="_blank"
             rel="noopener noreferrer"
           >
             Book at Yoga Six
