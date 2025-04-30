@@ -55,7 +55,7 @@ export default function Home() {
           className="underline"
           href="https://www.yogasix.com/location/bearden" target="_blank"
           rel="noopener noreferrer"
-        >Yoga Six in Bearden</a>. Each of these locations offers a unique experience with specific class styles.</p>
+        >Yoga Six in Bearden</a>.</p>
         <p>Each location has their own rules for booking, most places have options for drop-in visits or a free trials.</p>
           <br />
           <hr />
