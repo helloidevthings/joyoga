@@ -1,0 +1,9 @@
+{
+    "editor.formatOnSave": true,
+    "prettier.insertPragma": true,
+    "prettier.experimentalTernaries": true,
+    "prettier.requireConfig": true,
+    "prettier.requirePragma": true,
+    "html.format.wrapLineLength": 100,
+    "editor.wordWrap": "on"
+}
