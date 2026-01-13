@@ -47,7 +47,7 @@ export default function Home() {
         <section>
           <h3 className="text-3xl text-center">Classes & Purpose</h3>
           <p className="text-lg">My classes are designed to be fun and challenging, while also being accessible to all levels of practitioners. I believe that yoga should be a joyful experience, and I strive to create a welcoming and inclusive environment for all students. 👏</p>
-          <p>I teach a variety of classes, including power yoga, slow flow, and restorative yoga. 📍 Currently, you can find me at <a
+          <p>I specialize in teaching pilates and yoga. 📍 Currently, you can find me at <a
             className="underline"
             href="https://www.crunch.com/locations/fountain-city" target="_blank"
             rel="noopener noreferrer"
@@ -58,6 +58,18 @@ export default function Home() {
         >Yoga Six in Bearden</a>.</p>
         <p>Each location has their own rules for booking, most places have options for drop-in visits or a free trials.</p>
           <br />
+          <hr />
+          <br />
+                  <section>
+        <h3 className="text-2xl">🍻 Saturday Class at Pour Taproom!</h3>
+        <h4 className="text-1xl font-bold">January 24th at 11:00am</h4>
+          <p>Combined yoga and pilates class, 20mins Pilates and 40mins yoga.</p>
+                        <ul>
+            <li>🧘‍♀️ Bring a mat!</li>
+            <li>🙏 $10 for the class</li>
+            <li>🥂 10% off all beverages: Beer, wine, cocktails, THC Seltzers, N/A Beer and Kombucha, and a Mimosa Bar!</li>
+          </ul>
+        </section>          <br />
           <hr />
           <br />
           <h4 className="text-2xl">💪 Power Yoga</h4>
@@ -83,26 +95,9 @@ export default function Home() {
           <br />
           <h4 className="text-2xl">🌊 Slow Flow Yoga</h4>
           <p className="text-lg">In slow flow we hold the postures for a longer period of time than power. This gives enough time to deepen each pose. Challenging and strengthening!</p>
-          <h5 className="text-lg font-bold">Thursdays at 4:00pm</h5>
-          <h6>YogaSix, Bearden</h6>
-          <ul>
-            <li>🔥 90 Degrees</li>
-            <li>⏰ 60 Minutes</li>
-            <li>😎 Extra Chill</li>
-          </ul>
-          <br />
-             <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[190px]"
-            href="https://www.yogasix.com/location/bearden" target="_blank"
-            rel="noopener noreferrer"
-          >
-            Book at Yoga Six
-          </a>
-          <br />
-          <hr />
           <br />
           <h5 className="text-lg font-bold">Saturdays at 10:30am</h5>
-          <h6>YogaSix, Bearden</h6>
+              <h6>Crunch Fitness, Fountain City</h6>
           <ul>
             <li>🔥 90 Degrees</li>
             <li>⏰ 60 Minutes</li>
@@ -110,11 +105,11 @@ export default function Home() {
           </ul>
           <br />
              <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[190px]"
-            href="https://www.yogasix.com/location/bearden" target="_blank"
+            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[240px]"
+            href="https://www.crunch.com/locations/fountain-city" target="_blank"
             rel="noopener noreferrer"
           >
-            Book at Yoga Six
+            Book at Crunch Fitness
           </a>
           <br />
           <hr />
