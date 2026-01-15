@@ -104,147 +104,157 @@ export default function SignUpForm() {
 
       <form onSubmit={handleSubmit} className="space-y-6">
         {/* Name Field */}
-        <div className="form-control">
-          <label className="label">
-            <span className="label-text font-semibold">Full Name *</span>
+        <div className="mb-4">
+          <label className="block mb-2">
+            <span className="text-sm font-semibold">Full Name *</span>
           </label>
           <input
             type="text"
             name="name"
             value={formData.name}
             onChange={handleChange}
-            className={`input input-bordered w-full ${errors.name ? 'input-error' : ''}`}
+            className={`w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent disabled:opacity-50 disabled:cursor-not-allowed ${errors.name ? 'border-red-500' : 'border-gray-600 bg-gray-800'}`}
             placeholder="Enter your full name"
             disabled={isSubmitting}
           />
           {errors.name && (
-            <label className="label">
-              <span className="label-text-alt text-error">{errors.name}</span>
-            </label>
+            <div className="mt-1">
+              <span className="text-xs text-red-500">{errors.name}</span>
+            </div>
           )}
         </div>
 
         {/* Email Field */}
-        <div className="form-control">
-          <label className="label">
-            <span className="label-text font-semibold">Email Address *</span>
+        <div className="mb-4">
+          <label className="block mb-2">
+            <span className="text-sm font-semibold">Email Address *</span>
           </label>
           <input
             type="email"
             name="email"
             value={formData.email}
             onChange={handleChange}
-            className={`input input-bordered w-full ${errors.email ? 'input-error' : ''}`}
+            className={`w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent disabled:opacity-50 disabled:cursor-not-allowed ${errors.email ? 'border-red-500' : 'border-gray-600 bg-gray-800'}`}
             placeholder="your.email@example.com"
             disabled={isSubmitting}
           />
           {errors.email && (
-            <label className="label">
-              <span className="label-text-alt text-error">{errors.email}</span>
-            </label>
+            <div className="mt-1">
+              <span className="text-xs text-red-500">{errors.email}</span>
+            </div>
           )}
         </div>
 
         {/* Emergency Contact Section */}
-        <div className="divider">Emergency Contact Information</div>
+        <div className="relative my-8">
+          <div className="absolute inset-0 flex items-center">
+            <div className="w-full border-t border-gray-600"></div>
+          </div>
+          <div className="relative flex justify-center">
+            <span className="px-4 bg-background text-sm">Emergency Contact Information</span>
+          </div>
+        </div>
 
         {/* Emergency Contact Name */}
-        <div className="form-control">
-          <label className="label">
-            <span className="label-text font-semibold">Emergency Contact Name *</span>
+        <div className="mb-4">
+          <label className="block mb-2">
+            <span className="text-sm font-semibold">Emergency Contact Name *</span>
           </label>
           <input
             type="text"
             name="emergencyContactName"
             value={formData.emergencyContactName}
             onChange={handleChange}
-            className={`input input-bordered w-full ${errors.emergencyContactName ? 'input-error' : ''}`}
+            className={`w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent disabled:opacity-50 disabled:cursor-not-allowed ${errors.emergencyContactName ? 'border-red-500' : 'border-gray-600 bg-gray-800'}`}
             placeholder="Full name of emergency contact"
             disabled={isSubmitting}
           />
           {errors.emergencyContactName && (
-            <label className="label">
-              <span className="label-text-alt text-error">{errors.emergencyContactName}</span>
-            </label>
+            <div className="mt-1">
+              <span className="text-xs text-red-500">{errors.emergencyContactName}</span>
+            </div>
           )}
         </div>
 
         {/* Emergency Contact Phone */}
-        <div className="form-control">
-          <label className="label">
-            <span className="label-text font-semibold">Emergency Contact Phone *</span>
+        <div className="mb-4">
+          <label className="block mb-2">
+            <span className="text-sm font-semibold">Emergency Contact Phone *</span>
           </label>
           <input
             type="tel"
             name="emergencyContactPhone"
             value={formData.emergencyContactPhone}
             onChange={handleChange}
-            className={`input input-bordered w-full ${errors.emergencyContactPhone ? 'input-error' : ''}`}
+            className={`w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent disabled:opacity-50 disabled:cursor-not-allowed ${errors.emergencyContactPhone ? 'border-red-500' : 'border-gray-600 bg-gray-800'}`}
             placeholder="(555) 123-4567"
             disabled={isSubmitting}
           />
           {errors.emergencyContactPhone && (
-            <label className="label">
-              <span className="label-text-alt text-error">{errors.emergencyContactPhone}</span>
-            </label>
+            <div className="mt-1">
+              <span className="text-xs text-red-500">{errors.emergencyContactPhone}</span>
+            </div>
           )}
         </div>
 
         {/* Medical Conditions */}
-        <div className="form-control">
-          <label className="label">
-            <span className="label-text font-semibold">Medical Conditions or Injuries</span>
-            <span className="label-text-alt opacity-70">Optional</span>
+        <div className="mb-4">
+          <label className="block mb-2">
+            <span className="text-sm font-semibold">Medical Conditions or Injuries</span>
+            <span className="text-xs opacity-70 ml-2">Optional</span>
           </label>
           <textarea
             name="medicalConditions"
             value={formData.medicalConditions}
             onChange={handleChange}
-            className="textarea textarea-bordered w-full h-24"
+            className="w-full h-24 px-4 py-2 border border-gray-600 bg-gray-800 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent disabled:opacity-50 disabled:cursor-not-allowed resize-none"
             placeholder="Please list any medical conditions, injuries, or physical limitations we should be aware of..."
             disabled={isSubmitting}
           />
-          <label className="label">
-            <span className="label-text-alt opacity-70">This information helps the instructor provide appropriate modifications</span>
-          </label>
+          <div className="mt-1">
+            <span className="text-xs opacity-70">This information helps the instructor provide appropriate modifications</span>
+          </div>
         </div>
 
         {/* Waiver Section */}
         <div className="space-y-4">
           <WaiverText />
 
-          <div className="form-control">
-            <label className="label cursor-pointer justify-start gap-3">
+          <div className="mb-4">
+            <label className="flex items-start gap-3 cursor-pointer">
               <input
                 type="checkbox"
                 name="waiverAgreed"
                 checked={formData.waiverAgreed}
                 onChange={handleChange}
-                className={`checkbox ${errors.waiverAgreed ? 'checkbox-error' : 'checkbox-primary'}`}
+                className={`mt-1 w-4 h-4 rounded border-2 ${errors.waiverAgreed ? 'border-red-500' : 'border-purple-500'} focus:ring-2 focus:ring-purple-500 disabled:opacity-50 disabled:cursor-not-allowed`}
                 disabled={isSubmitting}
               />
-              <span className="label-text">
+              <span className="text-sm">
                 I have read and agree to the Liability Waiver and Release *
               </span>
             </label>
             {errors.waiverAgreed && (
-              <label className="label">
-                <span className="label-text-alt text-error">{errors.waiverAgreed}</span>
-              </label>
+              <div className="mt-1 ml-7">
+                <span className="text-xs text-red-500">{errors.waiverAgreed}</span>
+              </div>
             )}
           </div>
         </div>
 
         {/* Submit Button */}
-        <div className="form-control mt-6">
+        <div className="mt-6">
           <button
             type="submit"
-            className="btn btn-primary btn-lg w-full"
+            className="w-full px-6 py-3 bg-purple-600 text-white font-semibold rounded-lg hover:bg-purple-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors flex items-center justify-center gap-2"
             disabled={isSubmitting}
           >
             {isSubmitting ? (
               <>
-                <span className="loading loading-spinner"></span>
+                <svg className="animate-spin h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                  <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                  <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                </svg>
                 Submitting...
               </>
             ) : (
@@ -255,8 +265,8 @@ export default function SignUpForm() {
 
         {/* Success/Error Messages */}
         {submitStatus === 'success' && (
-          <div className="alert alert-success">
-            <svg xmlns="http://www.w3.org/2000/svg" className="stroke-current shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24">
+          <div className="flex items-center gap-3 p-4 bg-green-900/30 border border-green-500 rounded-lg">
+            <svg xmlns="http://www.w3.org/2000/svg" className="shrink-0 h-6 w-6 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
             <span>Thank you for signing up! You will receive a confirmation email shortly.</span>
@@ -264,8 +274,8 @@ export default function SignUpForm() {
         )}
 
         {submitStatus === 'error' && (
-          <div className="alert alert-error">
-            <svg xmlns="http://www.w3.org/2000/svg" className="stroke-current shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24">
+          <div className="flex items-center gap-3 p-4 bg-red-900/30 border border-red-500 rounded-lg">
+            <svg xmlns="http://www.w3.org/2000/svg" className="shrink-0 h-6 w-6 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
             <span>There was an error submitting your sign-up. Please try again.</span>
