@@ -21,23 +21,24 @@ export default function SignUpPage() {
             <p>
               <strong>Joyanna is a licensed yoga instructor</strong> with experience in both yoga and pilates, she teaches at Crunch Fitness and received her 200hr Yoga Teacher Training from Yoga Six.
               </p>
-              <p>
-              Pour Taproom will be open before regular hours for this dedicated class time.
-            </p>
             <p>
-              <strong>What to Bring:</strong>
+              <strong>Things To Remember</strong>
             </p>
             <ul className="list-disc list-inside ml-4 space-y-1">
               <li>Yoga mat</li>
               <li>Towel</li>
               <li>Water bottle</li>
+              <li>Arrive 10-15 minutes early to set up and get settled</li>
             </ul>
             <p>
-              <strong>Important Reminders:</strong>
+              <strong>Important Details</strong>
             </p>
             <ul className="list-disc list-inside ml-4 space-y-1">
-              <li>Listen to your body and take breaks as needed</li>
+              <li>Pour will be open an hour before regular hours at 11am for those attending the class.</li>
               <li>Drinks are available for purchase with multiple options including non-alcoholic beverages</li>
+              <li>10% Discount on your entire tab for attending the class</li>
+              <li>Class cost: $10</li>
+              <li>Parking: The sidestreet on the front of the building, the bridge or large parking lot are all available.</li>
             </ul>
           </div>
         </div>
