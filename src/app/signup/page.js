@@ -34,10 +34,10 @@ export default function SignUpPage() {
               <strong>Important Details</strong>
             </p>
             <ul className="list-disc list-inside ml-4 space-y-1">
-              <li>Pour will be open an hour before regular hours at 11am for those attending the class.</li>
+              <li>Class cost: $10</li>
+              <li>Pour will be open an hour before regular hours at 11am for those attending the class</li>
               <li>Drinks are available for purchase with multiple options including non-alcoholic beverages</li>
               <li>10% Discount on your entire tab for attending the class</li>
-              <li>Class cost: $10</li>
               <li>Parking: The sidestreet on the front of the building, the bridge or large parking lot are all available.</li>
             </ul>
           </div>
