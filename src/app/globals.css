@@ -1,8 +1,45 @@
 @import "tailwindcss";
+@plugin "daisyui";
+
+@plugin "daisyui/theme" {
+  name: "sweetwave";
+  default: true;
+  prefersdark: true;
+  color-scheme: "dark";
+  --color-base-100: oklch(15% 0.09 281.288);
+  --color-base-200: oklch(20% 0.09 281.288);
+  --color-base-300: oklch(25% 0.09 281.288);
+  --color-base-content: oklch(87% 0.065 274.039);
+  --color-primary: oklch(66% 0.295 322.15);
+  --color-primary-content: oklch(29% 0.136 325.661);
+  --color-secondary: oklch(86% 0.127 207.078);
+  --color-secondary-content: oklch(29% 0.066 243.157);
+  --color-accent: oklch(67% 0.182 276.935);
+  --color-accent-content: oklch(28% 0.141 291.089);
+  --color-neutral: oklch(45% 0.24 277.023);
+  --color-neutral-content: oklch(87% 0.065 274.039);
+  --color-info: oklch(74% 0.16 232.661);
+  --color-info-content: oklch(29% 0.066 243.157);
+  --color-success: oklch(77% 0.152 181.912);
+  --color-success-content: oklch(27% 0.046 192.524);
+  --color-warning: oklch(90% 0.182 98.111);
+  --color-warning-content: oklch(42% 0.095 57.708);
+  --color-error: oklch(73.7% 0.121 32.639);
+  --color-error-content: oklch(23.501% 0.096 290.329);
+  --radius-selector: 2rem;
+  --radius-field: 2rem;
+  --radius-box: 2rem;
+  --size-selector: 0.28125rem;
+  --size-field: 0.28125rem;
+  --border: 2px;
+  --depth: 1;
+  --noise: 1;
+}
+
 
 :root {
-  --background: #28293f;
-  --foreground: #ededed;
+  /* --background: #28293f;
+  --foreground: #ededed; */
 
   font-size: 16px;   
 }
@@ -19,23 +56,23 @@
   }
 }
 
-@theme inline {
+/* @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
+} */
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #28293f;
     --foreground: #ededed;
   }
-}
+} */
 
 body {
-  background: var(--background);
-  color: var(--foreground);
+  /* background: var(--background); */
+  /* color: var(--foreground); */
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.5;
 }

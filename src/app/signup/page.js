@@ -8,7 +8,7 @@ export const metadata = {
 
 export default function SignUpPage() {
   return (
-    <div className="min-h-screen py-12 px-4">
+    <div className="min-h-screen py-12 px-4 text-base-content">
       <div className="max-w-3xl mx-auto">
         <Link href="/" className="btn btn-ghost btn-sm mb-6">
           ← Back to Home
@@ -44,7 +44,7 @@ export default function SignUpPage() {
 
         <SignUpForm />
 
-        <div className="text-center mt-8 text-sm opacity-70">
+        <div className="text-center mt-8 text-sm opacity-80">
           <p>Have questions? Contact Joyanna on Instagram
             <a
               href="https://www.instagram.com/joyannayoga/"
