@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { GoogleAnalytics } from '@next/third-parties/google'
 
 
@@ -26,7 +27,7 @@ export default function Home() {
           {/* <h3 className="text-2xl">Connect with Me</h3> */}
           <a
             className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://www.instagram.com/joyogaflow/?igsh=MXVkOXRlMTM4ejY3dQ%3D%3D#" target="_blank"
+            href="https://www.instagram.com/joyannayoga" target="_blank"
             rel="noopener noreferrer"
           >
           Instagram</a>
@@ -69,6 +70,13 @@ export default function Home() {
             <li>🙏 $10 for the class</li>
             <li>🥂 10% off all beverages: Beer, wine, cocktails, THC Seltzers, N/A Beer and Kombucha, and a Mimosa Bar!</li>
           </ul>
+          <br />
+          <Link
+            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[240px]"
+            href="/signup"
+          >
+            Sign Up for This Class
+          </Link>
         </section>          <br />
           <hr />
           <br />
