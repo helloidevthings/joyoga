@@ -204,9 +204,9 @@ export default function SignUpForm() {
             placeholder="Please list any medical conditions, injuries, or physical limitations we should be aware of..."
             disabled={isSubmitting}
           />
-          <label className="label">
-            <span className="label-text-alt">This information helps the instructor provide appropriate modifications</span>
-          </label>
+          {/* <label className="label">
+            <span className="label-text-alt break-words">This information helps the instructor provide appropriate modifications</span>
+          </label> */}
         </div>
 
         {/* Waiver Section */}

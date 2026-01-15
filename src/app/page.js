@@ -23,7 +23,7 @@ export default function Home() {
             <span className="text-lg font-bold">Joyanna</span> is a yoga instructor based in Knoxville, TN. She is passionate about helping others find their own joy through movement and mindfulness.
           </p>
         </section>
-        <section className="flex gap-4 items-start sm:flex-row">
+        <section className="flex flex-col sm:flex-row gap-4 items-stretch sm:items-center sm:justify-center w-full">
           {/* <h3 className="text-2xl">Connect with Me</h3> */}
           <a
             className="btn btn-primary w-full sm:w-auto md:w-[158px]"
