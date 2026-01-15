@@ -8,7 +8,7 @@ export const metadata = {
 
 export default function SignUpPage() {
   return (
-    <div className="min-h-screen py-12 px-4" data-theme="coffee">
+    <div className="min-h-screen py-12 px-4">
       <div className="max-w-3xl mx-auto">
         <Link href="/" className="btn btn-ghost btn-sm mb-6">
           ← Back to Home
