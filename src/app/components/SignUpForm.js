@@ -218,7 +218,7 @@ export default function SignUpForm() {
                 className={`checkbox ${errors.waiverAgreed ? 'checkbox-error' : 'checkbox-primary'}`}
                 disabled={isSubmitting}
               />
-              <span className="label-text">
+              <span className="label-text text-wrap">
                 I have read and agree to the Liability Waiver and Release *
               </span>
             </label>
@@ -240,7 +240,7 @@ export default function SignUpForm() {
                 className="checkbox checkbox-primary"
                 disabled={isSubmitting}
               />
-              <span className="label-text">
+              <span className="label-text text-wrap">
                 I would like to receive updates about upcoming classes and events
               </span>
             </label>
