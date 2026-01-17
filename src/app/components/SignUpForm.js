@@ -240,7 +240,7 @@ export default function SignUpForm() {
                 className="checkbox checkbox-primary"
                 disabled={isSubmitting}
               />
-              <span className="label-text text-wrap">
+              <span className="label-text text-wrap">Optional:
                 I would like to receive updates about upcoming classes and events
               </span>
             </label>
