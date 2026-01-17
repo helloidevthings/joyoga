@@ -14,6 +14,13 @@ export default function SignUpPage() {
           ← Back to Home
         </Link>
 
+        {/* Class Title and Location */}
+        <div className="text-center mb-8">
+          <h1 className="text-4xl font-bold mb-2">Sign Up for Pints & Pilates</h1>
+          <p className="text-lg">Saturday 11:00am - Yoga + Pilates</p>
+          <p className="text-sm opacity-80 mt-2">Pour Taproom, 207 W Jackson Ave Knoxville, TN 37902</p>
+        </div>
+
         {/* Class Information Section */}
         <div className="bg-base-200 rounded-lg p-6 mb-8">
           <h2 className="text-xl font-bold mb-4">About This Class</h2>

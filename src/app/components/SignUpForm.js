@@ -11,6 +11,7 @@ export default function SignUpForm() {
     emergencyContactPhone: '',
     medicalConditions: '',
     waiverAgreed: false,
+    marketingConsent: false,
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState(null);
@@ -68,7 +69,7 @@ export default function SignUpForm() {
 
       if (response.ok) {
         setSubmitStatus('success');
-        setFormData({ name: '', email: '', emergencyContactName: '', emergencyContactPhone: '', medicalConditions: '', waiverAgreed: false });
+        setFormData({ name: '', email: '', emergencyContactName: '', emergencyContactPhone: '', medicalConditions: '', waiverAgreed: false, marketingConsent: false });
       } else {
         const data = await response.json();
         setSubmitStatus('error');
@@ -96,12 +97,6 @@ export default function SignUpForm() {
 
   return (
     <div className="max-w-3xl mx-auto text-base-content">
-      <div className="text-center mb-8">
-        <h1 className="text-4xl font-bold mb-2">Sign Up for Pints & Pilates</h1>
-        <p className="text-lg">Saturday 11:00am - Yoga + Pilates</p>
-        <p className="text-sm opacity-80 mt-2">Pour Taproom, 207 W Jackson Ave Knoxville, TN 37902</p>
-      </div>
-
       <form onSubmit={handleSubmit} className="space-y-6">
         {/* Name Field */}
         <div className="form-control">
@@ -232,6 +227,23 @@ export default function SignUpForm() {
                 <span className="label-text-alt text-error">{errors.waiverAgreed}</span>
               </label>
             )}
+          </div>
+
+          {/* Marketing Consent */}
+          <div className="form-control mt-4">
+            <label className="label cursor-pointer justify-start gap-3">
+              <input
+                type="checkbox"
+                name="marketingConsent"
+                checked={formData.marketingConsent}
+                onChange={handleChange}
+                className="checkbox checkbox-primary"
+                disabled={isSubmitting}
+              />
+              <span className="label-text">
+                I would like to receive updates about upcoming classes and events
+              </span>
+            </label>
           </div>
         </div>
 
