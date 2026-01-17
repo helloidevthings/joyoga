@@ -54,7 +54,7 @@ export async function POST(request) {
 
     try {
       await resend.emails.send({
-        from: 'Joyanna <reply@joyogaflow.com>', // Change this to your verified domain
+        from: 'Joyanna <aquajoybubble@gmail.com>', // Change this to your verified domain
         to: 'aquajoybubble@gmail.com',
         subject: `New Sign-Up: ${name} - Pour Taproom Class`,
         text: emailContent,
