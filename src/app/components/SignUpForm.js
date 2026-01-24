@@ -298,7 +298,6 @@ export default function SignUpForm() {
               </svg>
               <span>Thank you for signing up! You will receive a confirmation email shortly.</span>
             </div>
-            <p className="mb-4">Complete your registration by paying for the class:</p>
             <a
               href="https://venmo.com/u/Joyogaflow"
               target="_blank"
