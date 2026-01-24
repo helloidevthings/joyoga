@@ -139,6 +139,22 @@ export default function SignUpForm() {
             </label>
           )}
         </div>
+                  {/* Marketing Consent */}
+          <div className="form-control mt-4">
+            <label className="label cursor-pointer justify-start gap-3">
+              <input
+                type="checkbox"
+                name="marketingConsent"
+                checked={formData.marketingConsent}
+                onChange={handleChange}
+                className="checkbox checkbox-primary"
+                disabled={isSubmitting}
+              />
+              <span className="label-text text-wrap">Optional:
+                I would like to receive updates about upcoming classes and events
+              </span>
+            </label>
+          </div>
 
         {/* Emergency Contact Section */}
         <div className="divider">Emergency Contact Information</div>
@@ -229,22 +245,6 @@ export default function SignUpForm() {
             )}
           </div>
 
-          {/* Marketing Consent */}
-          <div className="form-control mt-4">
-            <label className="label cursor-pointer justify-start gap-3">
-              <input
-                type="checkbox"
-                name="marketingConsent"
-                checked={formData.marketingConsent}
-                onChange={handleChange}
-                className="checkbox checkbox-primary"
-                disabled={isSubmitting}
-              />
-              <span className="label-text text-wrap">Optional:
-                I would like to receive updates about upcoming classes and events
-              </span>
-            </label>
-          </div>
         </div>
 
         {/* Submit Button */}
