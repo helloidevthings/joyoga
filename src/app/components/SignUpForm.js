@@ -16,6 +16,7 @@ export default function SignUpForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState(null);
   const [errors, setErrors] = useState({});
+  const [showSuccessModal, setShowSuccessModal] = useState(false);
 
   const validateForm = () => {
     const newErrors = {};
@@ -69,6 +70,7 @@ export default function SignUpForm() {
 
       if (response.ok) {
         setSubmitStatus('success');
+        setShowSuccessModal(true);
         setFormData({ name: '', email: '', emergencyContactName: '', emergencyContactPhone: '', medicalConditions: '', waiverAgreed: false, marketingConsent: false });
       } else {
         const data = await response.json();
@@ -265,16 +267,7 @@ export default function SignUpForm() {
           </button>
         </div>
 
-        {/* Success/Error Messages */}
-        {submitStatus === 'success' && (
-          <div className="alert alert-success">
-            <svg xmlns="http://www.w3.org/2000/svg" className="stroke-current shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-            </svg>
-            <span>Thank you for signing up! You will receive a confirmation email shortly.</span>
-          </div>
-        )}
-
+        {/* Error Message */}
         {submitStatus === 'error' && (
           <div className="alert alert-error">
             <svg xmlns="http://www.w3.org/2000/svg" className="stroke-current shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24">
@@ -284,6 +277,41 @@ export default function SignUpForm() {
           </div>
         )}
       </form>
+
+      {/* Success Modal */}
+      {showSuccessModal && (
+        <dialog className="modal modal-open">
+          <div className="modal-box">
+            <h3 className="font-bold text-lg mb-4">Sign-Up Successful!</h3>
+            <div className="alert alert-success mb-6">
+              <svg xmlns="http://www.w3.org/2000/svg" className="stroke-current shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              <span>Thank you for signing up! You will receive a confirmation email shortly.</span>
+            </div>
+            <p className="mb-4">Complete your registration by paying for the class:</p>
+            <a
+              href="https://venmo.com/u/Joyogaflow"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-primary w-full mb-4"
+            >
+              Pay for Class on Venmo
+            </a>
+            <div className="modal-action">
+              <button
+                className="btn btn-ghost"
+                onClick={() => setShowSuccessModal(false)}
+              >
+                Close
+              </button>
+            </div>
+          </div>
+          <form method="dialog" className="modal-backdrop" onClick={() => setShowSuccessModal(false)}>
+            <button>close</button>
+          </form>
+        </dialog>
+      )}
     </div>
   );
 }
