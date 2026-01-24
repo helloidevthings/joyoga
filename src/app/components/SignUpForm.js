@@ -27,8 +27,11 @@ export default function SignUpForm() {
 
     if (!formData.email.trim()) {
       newErrors.email = 'Email is required';
-    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
-      newErrors.email = 'Please enter a valid email address';
+    } else {
+      const emailRegex = /^[a-zA-Z0-9._+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+      if (!emailRegex.test(formData.email)) {
+        newErrors.email = 'Please enter a valid email address';
+      }
     }
 
     if (!formData.emergencyContactName.trim()) {
@@ -37,8 +40,14 @@ export default function SignUpForm() {
 
     if (!formData.emergencyContactPhone.trim()) {
       newErrors.emergencyContactPhone = 'Emergency contact phone is required';
-    } else if (!/^[\d\s\-\(\)\+]+$/.test(formData.emergencyContactPhone)) {
-      newErrors.emergencyContactPhone = 'Please enter a valid phone number';
+    } else {
+      // Remove all non-digit characters to count actual numbers
+      const digitsOnly = formData.emergencyContactPhone.replace(/\D/g, '');
+      if (digitsOnly.length < 10) {
+        newErrors.emergencyContactPhone = 'Phone number must be at least 10 digits';
+      } else if (!/^[\d\s\-\(\)\+]+$/.test(formData.emergencyContactPhone)) {
+        newErrors.emergencyContactPhone = 'Please enter a valid phone number';
+      }
     }
 
     if (!formData.waiverAgreed) {
