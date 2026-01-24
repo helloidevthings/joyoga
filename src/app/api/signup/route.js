@@ -54,7 +54,7 @@ export async function POST(request) {
 
     try {
       await resend.emails.send({
-        from: 'Joyanna <noreply@joyogaflow.com>',
+        from: 'Joyanna <reply@joyogaflow.com>',
         to: 'aquajoybubble@gmail.com',
         subject: `New Sign-Up: ${name} - Pour Taproom Class`,
         text: emailContent,
