@@ -19,6 +19,7 @@ export default function SignUpPage() {
           <h1 className="text-4xl font-bold mb-2">Sign Up for Yoga & Pilates</h1>
           <p className="text-lg">Saturday 11:00am - Yoga + Pilates</p>
           <p className="text-sm opacity-80 mt-2">Pour Taproom, 207 W Jackson Ave Knoxville, TN 37902</p>
+          <p className="text-sm opacity-80 mt-2">Next Class: March 21st</p>
         </div>
 
         {/* Class Information Section */}

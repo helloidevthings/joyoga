@@ -65,7 +65,7 @@ export default function Home() {
         <h3 className="text-2xl">🍻 Saturday Class • 11am at Pour Taproom!</h3>
         <h4 className="text-1xl font-bold">February 7th</h4>
         <h4 className="text-1xl font-bold">February 21st</h4>
-        <h4 className="text-1xl font-bold">March 7th</h4>
+        <h4 className="text-1xl font-bold"><s>March 7th</s> • Cancelled, Mardi Growl Watch Party at Pour!</h4>
         <h4 className="text-1xl font-bold">March 21st</h4>
           <p>Combined yoga and pilates class, 20mins Pilates and 40mins yoga.</p>
                         <ul>
