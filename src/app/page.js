@@ -63,8 +63,9 @@ export default function Home() {
           <br />
                   <section>
         <h3 className="text-2xl">🍻 Saturday Class • 11am at Pour Taproom!</h3>
-        <h4 className="text-1xl font-bold"><s>March 7th</s> • Cancelled, Mardi Growl Watch Party at Pour!</h4>
+        <h4 className="text-1xl font-bold"><s>March 7th</s> - Cancelled</h4>
         <h4 className="text-1xl font-bold">March 21st</h4>
+        <h4 className="text-1xl font-bold">Every Saturday after March 21st!</h4>
           <p>Combined yoga and pilates class, 20mins Pilates and 40mins yoga.</p>
                         <ul>
             <li>🧘‍♀️ Bring a mat!</li>
@@ -103,22 +104,6 @@ export default function Home() {
           <br />
           <h4 className="text-2xl">🌊 Slow Flow Yoga</h4>
           <p className="text-lg">In slow flow we hold the postures for a longer period of time than power. This gives enough time to deepen each pose. Challenging and strengthening!</p>
-          <br />
-          <h5 className="text-lg font-bold">Saturdays at 10:30am</h5>
-              <h6>Crunch Fitness, Fountain City</h6>
-          <ul>
-            <li>🔥 90 Degrees</li>
-            <li>⏰ 60 Minutes</li>
-            <li>🎶 Extra Vibes</li>
-          </ul>
-          <br />
-             <a
-            className="btn btn-secondary w-full sm:w-auto md:w-[240px]"
-            href="https://www.crunch.com/locations/fountain-city" target="_blank"
-            rel="noopener noreferrer"
-          >
-            Book at Crunch Fitness
-          </a>
           <br />
         </section>
         <section>
