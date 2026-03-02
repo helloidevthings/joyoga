@@ -10,7 +10,7 @@ export default function Home() {
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-center w-full max-w-3xl mx-auto">
 
         <Image
-          src="/joyanna-profile-yoga.jpg"
+          src="/joyanna-profile-yoga-md.jpg"
           alt="Joyoga Logo"
           width={200}
           height={200}
@@ -63,8 +63,6 @@ export default function Home() {
           <br />
                   <section>
         <h3 className="text-2xl">🍻 Saturday Class • 11am at Pour Taproom!</h3>
-        <h4 className="text-1xl font-bold">February 7th</h4>
-        <h4 className="text-1xl font-bold">February 21st</h4>
         <h4 className="text-1xl font-bold"><s>March 7th</s> • Cancelled, Mardi Growl Watch Party at Pour!</h4>
         <h4 className="text-1xl font-bold">March 21st</h4>
           <p>Combined yoga and pilates class, 20mins Pilates and 40mins yoga.</p>

@@ -6,26 +6,69 @@
   default: true;
   prefersdark: true;
   color-scheme: "dark";
-  --color-base-100: oklch(15% 0.09 281.288);
-  --color-base-200: oklch(20% 0.09 281.288);
-  --color-base-300: oklch(25% 0.09 281.288);
-  --color-base-content: oklch(87% 0.065 274.039);
-  --color-primary: oklch(66% 0.295 322.15);
-  --color-primary-content: oklch(29% 0.136 325.661);
-  --color-secondary: oklch(86% 0.127 207.078);
-  --color-secondary-content: oklch(29% 0.066 243.157);
-  --color-accent: oklch(67% 0.182 276.935);
-  --color-accent-content: oklch(28% 0.141 291.089);
-  --color-neutral: oklch(45% 0.24 277.023);
-  --color-neutral-content: oklch(87% 0.065 274.039);
-  --color-info: oklch(74% 0.16 232.661);
-  --color-info-content: oklch(29% 0.066 243.157);
-  --color-success: oklch(77% 0.152 181.912);
-  --color-success-content: oklch(27% 0.046 192.524);
-  --color-warning: oklch(90% 0.182 98.111);
-  --color-warning-content: oklch(42% 0.095 57.708);
-  --color-error: oklch(73.7% 0.121 32.639);
-  --color-error-content: oklch(23.501% 0.096 290.329);
+
+  --color-base-100: rgb(72, 50, 50);
+  --color-base-200: rgb(68, 46, 46);
+  --color-base-300: rgb(84, 54, 54);
+  --color-base-content: rgb(247, 237, 232);
+  --color-primary: rgb(255, 157, 92);
+  --color-primary-content: rgb(93, 33, 58);
+  --color-secondary: rgb(225, 220, 202);
+  --color-secondary-content: rgb(93, 77, 66);
+  --color-accent: rgb(240, 184, 120);
+  --color-accent-content: rgb(84, 47, 47);
+  --color-neutral: rgb(131, 85, 85);
+  --color-neutral-content: rgb(232, 224, 210);
+  --color-info: rgb(225, 183, 146);
+  --color-info-content: rgb(99, 72, 72);
+  --color-success: rgb(222, 186, 150);
+  --color-success-content: rgb(54, 45, 41);
+  --color-warning: rgb(237, 197, 176);
+  --color-warning-content: rgb(111, 90, 73);
+  --color-error: rgb(211, 127, 110);
+  --color-error-content: rgb(62, 42, 42);
+
+  
+      /* --color-base-100: rgb(54, 24, 24);
+  --color-base-200: rgb(72, 32, 32);
+  --color-base-300: rgb(90, 41, 41);
+  --color-base-content: rgb(255, 237, 228);
+  --color-primary: rgb(255, 114, 92);
+  --color-primary-content: #5c2452ff;
+  --color-secondary: rgb(255, 239, 181);
+  --color-secondary-content: rgb(87, 68, 54);
+  --color-accent: rgb(255, 187, 109);
+  --color-accent-content: rgb(92, 36, 36);
+  --color-neutral: rgb(134, 74, 74);
+  --color-neutral-content: rgb(255, 245, 228);
+  --color-info: rgb(255, 178, 111);
+  --color-info-content: rgb(87, 54, 54);
+  --color-success: rgb(255, 196, 137);
+  --color-success-content: rgb(54, 45, 41);
+  --color-warning: rgb(255, 195, 163);
+  --color-warning-content: rgb(134, 94, 62);
+  --color-error: #ff785cff;
+  --color-error-content: rgb(77, 36, 36); */
+  /* --color-base-100: #1c1836ff;
+  --color-base-200: #252048ff;
+  --color-base-300: #2f295aff;
+  --color-base-content: #e8e4ffff;
+  --color-primary: #ef5cffff;
+  --color-primary-content: #5c2452ff;
+  --color-secondary: #b5d9ffff;
+  --color-secondary-content: #363e57ff;
+  --color-accent: #aa6dffff;
+  --color-accent-content: #4d245cff;
+  --color-neutral: #614a86ff;
+  --color-neutral-content: #e8e4ffff;
+  --color-info: #6faaffff;
+  --color-info-content: #363e57ff;
+  --color-success: #89ffb5ff;
+  --color-success-content: #29362fff;
+  --color-warning: #fff2a3ff;
+  --color-warning-content: #866d3eff;
+  --color-error: #ff785cff;
+  --color-error-content: #3d244dff; */
   --radius-selector: 2rem;
   --radius-field: 2rem;
   --radius-box: 2rem;
@@ -41,7 +84,8 @@
   /* --background: #28293f;
   --foreground: #ededed; */
 
-  font-size: 16px;   
+  font-size: 16px;
+
 }
 
 @media screen and (min-width: 320px) {
