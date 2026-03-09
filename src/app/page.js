@@ -20,7 +20,7 @@ export default function Home() {
           <h1 className="text-4xl md:text-6xl lg:txt-8xl space-y-5">Joyoga</h1>
           <h2 className="text-2xl space-y-2 md:text-3xl lg:txt-4xl text-align-center">Yoga is a Moving Meditation</h2>
           <p>
-            <span className="text-lg font-bold">Joyanna</span> is a yoga instructor based in Knoxville, TN. She is passionate about helping others find their own joy through movement and mindfulness.
+            <span className="text-lg font-bold">Joyanna</span> is a yoga instructor based in Knoxville, TN.
           </p>
         </section>
         <section className="flex flex-col sm:flex-row gap-4 items-stretch sm:items-center sm:justify-center w-full">
