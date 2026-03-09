@@ -153,11 +153,33 @@ export async function POST(request) {
     `;
 
     try {
+      // Send admin notification
       await resend.emails.send({
         from: 'Joyanna <noreply@joyogaflow.com>',
         to: 'aquajoybubble@gmail.com',
         subject: `New Sign-Up: ${name} - Pour Taproom Class`,
         text: emailContent,
+      });
+
+      // Send confirmation email to user
+      const userConfirmation = `
+Hi ${name},
+
+Thanks for signing up for the Pour Taproom Saturday Yoga & Pilates class!
+
+We've received your registration and look forward to seeing you on the mat.
+
+If you have any questions, feel free to reach out.
+
+See you soon!
+Joyanna
+      `;
+
+      await resend.emails.send({
+        from: 'Joyanna <noreply@joyogaflow.com>',
+        to: email,
+        subject: 'Registration Confirmed - Pour Taproom Saturday Class',
+        text: userConfirmation,
       });
 
       return NextResponse.json(
