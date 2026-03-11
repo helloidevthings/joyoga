@@ -44,15 +44,21 @@ export default function Home() {
           >
             Venmo
           </a>
+          <br />
+          <hr />
         </section>
         <section>
           <h3 className="text-3xl text-center">Classes & Purpose</h3>
-          <p className="text-lg">My classes are designed to be fun and challenging, while also being accessible to all levels of practitioners. I believe that yoga should be a joyful experience, and I strive to create a welcoming and inclusive environment for all students. 👏</p>
+          <p className="text-lg">My classes are designed to be fun and challenging, while also being accessible to all levels of practitioners. I strive to create a welcoming and inclusive environment for all students. 👏</p>
           <p>I specialize in teaching pilates and yoga. 📍 Currently, you can find me at <a
             className="link link-hover"
             href="https://www.crunch.com/locations/fountain-city" target="_blank"
             rel="noopener noreferrer"
-          >Crunch Fitness in Fountain City</a> and  <a
+          >Crunch Fitness in Fountain City</a>, <a
+            className="link link-hover"
+            href="https://pourtaproom.com/index.php/locations/pour-taproom-knoxville/" target="_blank"
+            rel="noopener noreferrer"
+          >Pour Taproom</a> in the Old City and occasionally at <a
           className="link link-hover"
           href="https://www.yogasix.com/location/bearden" target="_blank"
           rel="noopener noreferrer"
@@ -81,6 +87,8 @@ export default function Home() {
           </Link>
         </section>
           <br />
+                    <br />
+          <hr />
           <br />
           <h4 className="text-2xl">💪 Power Yoga</h4>
           <p className="text-lg">I really enjoy teaching power classes. Using a faster flow and adding complexity to the postures each round of flow. ✨ High energy and fun!</p>
@@ -100,11 +108,13 @@ export default function Home() {
           >
             Book at Crunch Fitness
           </a>
-          <br />
+          {/* <br />
           <br />
           <h4 className="text-2xl">🌊 Slow Flow Yoga</h4>
-          <p className="text-lg">In slow flow we hold the postures for a longer period of time than power. This gives enough time to deepen each pose. Challenging and strengthening!</p>
+          <p className="text-lg">In slow flow we hold the postures for a longer period of time than power. This gives enough time to deepen each pose. Challenging and strengthening!</p> */}
           <br />
+          <br />
+          <hr />
         </section>
         <section>
         <h3 className="text-2xl">🧪 Methodologies</h3>
@@ -117,6 +127,11 @@ export default function Home() {
           >
             Benefits of Meditation • Mayo Clinic
           </a>
+          <br />
+          <br />
+          <h4 className="text-1xl font-bold">😮‍💨 Breath to movement</h4>
+          <p>Breath to movement is a technique that helps to connect the breath with the movement. This helps to create a flow and rhythm in the practice. It also helps to increase the intensity of the practice.</p>
+          <p>By deepening our exhale breaths we specifically ask our focus to return to our physical body and this will help you move through each posture with intention.</p>
         </section>
       </main>
     </div>
