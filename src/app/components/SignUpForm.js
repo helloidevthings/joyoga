@@ -12,6 +12,7 @@ export default function SignUpForm() {
     medicalConditions: '',
     waiverAgreed: false,
     marketingConsent: false,
+    website: '', // honeypot field
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState(null);
@@ -134,6 +135,19 @@ export default function SignUpForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+    // Check honeypot field - if filled, it's a bot
+    if (formData.website) {
+      // Silently fail - pretend it succeeded to not tip off the bot
+      setIsSubmitting(true);
+      setTimeout(() => {
+        setIsSubmitting(false);
+        setSubmitStatus('success');
+        setShowSuccessModal(true);
+        setFormData({ name: '', email: '', emergencyContactName: '', emergencyContactPhone: '', medicalConditions: '', waiverAgreed: false, marketingConsent: false, website: '' });
+      }, 1000);
+      return;
+    }
+
     if (!validateForm()) {
       return;
     }
@@ -153,7 +167,7 @@ export default function SignUpForm() {
       if (response.ok) {
         setSubmitStatus('success');
         setShowSuccessModal(true);
-        setFormData({ name: '', email: '', emergencyContactName: '', emergencyContactPhone: '', medicalConditions: '', waiverAgreed: false, marketingConsent: false });
+        setFormData({ name: '', email: '', emergencyContactName: '', emergencyContactPhone: '', medicalConditions: '', waiverAgreed: false, marketingConsent: false, website: '' });
       } else {
         const data = await response.json();
         setSubmitStatus('error');
@@ -223,6 +237,24 @@ export default function SignUpForm() {
             </label>
           )}
         </div>
+
+        {/* Honeypot field - hidden from real users, visible to bots */}
+        <div className="form-control" style={{ position: 'absolute', left: '-9999px', opacity: 0, pointerEvents: 'none' }} aria-hidden="true" tabIndex="-1">
+          <label className="label">
+            <span className="label-text">Website</span>
+          </label>
+          <input
+            type="text"
+            name="website"
+            value={formData.website}
+            onChange={handleChange}
+            className="input input-bordered w-full"
+            placeholder="http://"
+            tabIndex="-1"
+            autoComplete="off"
+          />
+        </div>
+
                   {/* Marketing Consent */}
           <div className="form-control mt-4">
             <label className="label cursor-pointer justify-start gap-3">

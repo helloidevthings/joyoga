@@ -78,7 +78,16 @@ const validatePhone = (phone) => {
 
 export async function POST(request) {
   try {
-    const { name, email, emergencyContactName, emergencyContactPhone, medicalConditions, waiverAgreed } = await request.json();
+    const { name, email, emergencyContactName, emergencyContactPhone, medicalConditions, waiverAgreed, website } = await request.json();
+
+    // Honeypot check - if website field is filled, it's a bot
+    if (website) {
+      // Return success to not tip off the bot, but don't actually process
+      return NextResponse.json(
+        { success: true, message: 'Sign-up received successfully' },
+        { status: 200 }
+      );
+    }
 
     // Validate input
     if (!name || !email || !emergencyContactName || !emergencyContactPhone || !waiverAgreed) {
