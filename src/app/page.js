@@ -50,7 +50,7 @@ export default function Home() {
         <section>
           <h3 className="text-3xl text-center">Classes & Purpose</h3>
           <p className="text-lg">My classes are designed to be fun and challenging, while also being accessible to all levels of practitioners. I strive to create a welcoming and inclusive environment for all students. 👏</p>
-          <p>I specialize in teaching pilates and yoga. 📍 Currently, you can find me at <a
+          <p>I specialize in teaching yoga. 📍 Currently, you can find me at <a
             className="link link-hover"
             href="https://www.crunch.com/locations/fountain-city" target="_blank"
             rel="noopener noreferrer"
@@ -69,10 +69,8 @@ export default function Home() {
           <br />
                   <section>
         <h3 className="text-2xl">🍻 Saturday Class • 10:30am at Pour Taproom!</h3>
-        <h4 className="text-1xl font-bold"><s>March 7th</s> - Cancelled</h4>
-        <h4 className="text-1xl font-bold">March 21st</h4>
         <h4 className="text-1xl font-bold">Every Saturday after March 21st!</h4>
-          <p>Combined yoga and pilates class, 20mins Pilates and 40mins yoga.</p>
+          <p>Flow through a creative and challenging yoga class for 60mins.</p>
                         <ul>
             <li>🧘‍♀️ Bring a mat!</li>
             <li>🙏 $10 for the class</li>
