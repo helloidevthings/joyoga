@@ -17,7 +17,8 @@ export default function SignUpPage() {
         {/* Class Title and Location */}
         <div className="text-center mb-8">
           <h1 className="text-4xl font-bold mb-2">Sign Up for Yoga at Pour</h1>
-          <p className="text-lg">Saturday 10:30am</p>
+          <p className="text-lg">Saturday 10:30am | 4/18 and 4/25
+          </p>
           <p className="text-sm opacity-80 mt-2">Pour Taproom, 207 W Jackson Ave Knoxville, TN 37902</p>
           <p className="text-sm opacity-80 mt-2">Next Class: March 21st</p>
         </div>
