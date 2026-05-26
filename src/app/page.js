@@ -67,7 +67,7 @@ export default function Home() {
           <br />
           <hr />
           <br />
-                  <section>
+                  {/* <section>
         <h3 className="text-2xl">🍻 Saturday Class 4/18 and 4/25 • 10:30am at Pour Taproom!</h3>
         <h4 className="text-1xl font-bold">Every Saturday after March 21st!</h4>
           <p>Flow through a creative and challenging yoga class for 60mins.</p>
@@ -83,7 +83,7 @@ export default function Home() {
           >
             Sign Up for This Class
           </Link>
-        </section>
+        </section> */}
           <br />
                     <br />
           <hr />
